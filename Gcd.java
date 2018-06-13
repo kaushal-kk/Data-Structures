@@ -6,7 +6,7 @@ public class Gcd{
     {
         // Everything divides 0 
         if (a == 0 || b == 0)
-            return 0;
+            return (a>b)?a:b;
  
         // base case
         if (a == b)
@@ -14,8 +14,8 @@ public class Gcd{
  
         // a is greater
         if (a > b)
-        return GCD(a-b, b);
-    return GCD(a, b-a);
+        return GCD(a%b, b);
+    return GCD(a, b%a);
 }
     
      public static void main(String []args){
