@@ -24,7 +24,7 @@ public class Reverse {
 
     
      public static void main(String []args){
-        System.out.println("Enter two numbers to find GCD");
+        System.out.println("Enter a number to find tits reverse");
         Scanner sc = new Scanner(System.in);
         int m= sc.nextInt();
         int res = reverse(m);
